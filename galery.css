@@ -32,6 +32,7 @@
 
 @media screen and (min-width:1024px) {
   #galeria {
+    grid-template-columns: unset;
     grid-template-areas:
       "a b c"
       "d d d"
