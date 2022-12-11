@@ -30,7 +30,7 @@
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
   #galeria {
     grid-template-columns: unset;
     grid-template-areas:
@@ -63,12 +63,12 @@
   .kep8 {
     grid-area: h;
   }
-  #galeria img{
+  #galeria img {
     filter: grayscale(1);
     cursor: pointer;
-    transition: ease-in-out .35s;
+    transition: ease-in-out 0.35s;
   }
-  #galeria img :hover{
+  #galeria img:hover {
     filter: grayscale(0);
   }
 }
