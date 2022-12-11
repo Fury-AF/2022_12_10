@@ -1,0 +1,18 @@
+.footer {
+  position: fixed;
+  width: 100%;
+  text-emphasis: center;
+  padding: var(--defaultPadding);
+  background-color: var(--mobile-nav);
+  bottom: 0; /* ez mondja meg, hogy a footer az alján legyen a képernyőek */
+  color: var(--mobile_tex);
+  text-align: center;
+  font-family: var(--navFont);
+}
+
+@media screen and (min-width: 600px) {
+    .footer{
+        position:static;
+        bottom: unset;
+    }
+}

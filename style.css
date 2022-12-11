@@ -1,0 +1,62 @@
+/* J9TELEZŐ IMPORTÁLÁSOKKAL KEZDENI*/
+@import url(galery.css);
+@import url(mobile_nav.css);
+@import url(footer.css);
+/* MÁSODLAGOS IMPORTÁLÁS */
+@font-face {
+  font-family: Lato;
+  src: url(/font/Lato/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: Merriwather;
+  src: url(/font/Merriweather/Merriweather-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /*css valtozók*/
+  --mobile-nav: #181818;
+  --mobile_tex: white;
+  --navFont: Lato;
+  --title: Merriwather;
+  --defaultPadding: 0.5rem;
+}
+
+body {
+  width: 100vw;
+  max-width: 100vw;
+  overflow-x: scroll;
+  /*  background-color: var(--mobile-nav); */
+}
+
+main {
+  padding-top: 130px;
+}
+main h1 {
+  font-family: var(--title);
+  padding: var(--defaultPadding);
+  text-align: center;
+  font-weight: normal;
+  background-color: var(--mobile-nav);
+  color: var(--mobile_tex);
+  border-top: 1px snow;
+  font-size: 12px;
+  /*  position: fixed; */
+  /*  top: 130px; */
+  width: 100%;
+}
+@media screen and (min-width: 600px) {
+  main {
+    padding-top: 61px;
+  }
+  main h1 {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+  }
+}

@@ -1,0 +1,30 @@
+.navbar_mobile {
+  background-color: var(--mobile-nav);
+  padding: 0.75rem 0.5rem;
+  position: fixed;
+  width: 100%;
+}
+.navbar_mobile ul {
+  margin: auto;
+}
+.navbar_mobile ul li,
+.navbar_mobile ul {
+  width: fit-content;
+}
+.navbar_mobile ul li {
+  color: var(--mobile_tex);
+  /* text-align: center; */
+  list-style-type: none;
+  width: fit-content;
+  font-family: var(--navFont);
+  padding: var(--defaultPadding);
+}
+@media screen and (min-width: 600px) {
+  /*   .navbar_mobile ul li{
+    display: inline;
+  } */
+  .navbar_mobile ul {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+  }
+}
